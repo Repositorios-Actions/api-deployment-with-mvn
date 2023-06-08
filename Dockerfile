@@ -5,6 +5,8 @@ FROM amoreno124/ubuntu-deploy-api:1.0
 COPY entrypoint.sh /entrypoint.sh
 
 # Copia del archivo stage
+
+
 # COPY entrypoint.sh /entrypoint.sh
 
 # Code file to execute when the docker container starts up (`entrypoint.sh`)
