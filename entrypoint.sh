@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/sh -l
 
 JAVA_HOME='/opt/jdk-13.0.1'
 PATH="$JAVA_HOME/bin:$PATH"
@@ -12,10 +12,14 @@ PATH="$AXWAY_APIM_CLI_HOME/scripts:$PATH"
 export PATH
 alias apim=apim.sh
 
+chmod -R 777 /entrypoint.sh
 java -version
 mvn -version
 apim api get -a /api/v1/sample-anthony -s prd8252
 echo $1
+ls -l
+pwd
+id
 
 time=$(date)
 echo "time=$time" >> $GITHUB_OUTPUT
