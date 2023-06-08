@@ -1,4 +1,4 @@
-#!/bin/sh -l
+#!/bin/bash
 
 JAVA_HOME='/opt/jdk-13.0.1'
 PATH="$JAVA_HOME/bin:$PATH"
