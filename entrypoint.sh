@@ -18,15 +18,8 @@ PATH="$AXWAY_APIM_CLI_HOME/scripts:$PATH"
 export PATH
 alias apim=apim.sh
 
-#comandos
-alias
-java -version
-mvn -version
-apim
-echo $1
-ls -l
-pwd
-id
+#apim api get para ver la info de la api
+apim api get -a /api/v1/sample-anthony -s prd8252
 
 time=$(date)
 echo "time=$time" >> $GITHUB_OUTPUT
