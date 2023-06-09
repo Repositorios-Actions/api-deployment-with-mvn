@@ -8,17 +8,21 @@ export PATH
 M2_HOME='/opt/apache-maven-3.6.3'
 PATH="$M2_HOME/bin:$PATH"
 export PATH
-#Variables Axways
+#Instalación de apim
+wget https://github.com/Axway-API-Management-Plus/apim-cli/releases/download/1.13.7/axway-apimcli-1.13.7.tar.gz
+tar -xvf axway-apimcli-1.13.7.tar.gz
+#Variables de apim-cli
 AXWAY_APIM_CLI_HOME='apim-cli-1.13.7'
 export AXWAY_APIM_CLI_HOME
 PATH="$AXWAY_APIM_CLI_HOME/scripts:$PATH"
 export PATH
 alias apim=apim.sh
-alias
+
 #comandos
+alias
 java -version
 mvn -version
-apim api get -a /api/v1/sample-anthony -s prd8252
+apim
 echo $1
 ls -l
 pwd
